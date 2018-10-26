@@ -4,18 +4,18 @@ import com.endava.amcourse.person.Person;
 
 import java.util.List;
 
-public class Carriege {
+public class Carriage {
 
     private int number;
     private int numberOfSeats;
     private List<Person> passengers;
-    private CarriegeClass carriegeClass;
+    private CarriageClass carriageClass;
 
-    public Carriege(int number, int numberOfSeats, List<Person> passengers, CarriegeClass carriegeClass) {
+    public Carriage(int number, int numberOfSeats, List<Person> passengers, CarriageClass carriageClass) {
         this.number = number;
         this.numberOfSeats = numberOfSeats;
         this.passengers = passengers;
-        this.carriegeClass = carriegeClass;
+        this.carriageClass = carriageClass;
     }
 
     public int getNumber() {
@@ -42,21 +42,21 @@ public class Carriege {
         this.passengers = passengers;
     }
 
-    public CarriegeClass getCarriegeClass() {
-        return carriegeClass;
+    public CarriageClass getCarriageClass() {
+        return carriageClass;
     }
 
-    public void setCarriegeClass(CarriegeClass carriegeClass) {
-        this.carriegeClass = carriegeClass;
+    public void setCarriageClass(CarriageClass carriageClass) {
+        this.carriageClass = carriageClass;
     }
 
     @Override
     public String toString() {
-        return "Carriege{" +
+        return "Carriage{" +
                 "number=" + number +
                 ", numberOfSeats=" + numberOfSeats +
                 ", passengers=" + passengers +
-                ", carriegeClass=" + carriegeClass +
+                ", carriageClass=" + carriageClass +
                 '}';
     }
 }

@@ -1,6 +1,6 @@
 package com.endava.amcourse.train;
 
-public enum CarriegeClass {
+public enum CarriageClass {
 
     RK("Restaurant and Kitchen"),
     SL("Sleeper"),
@@ -9,7 +9,7 @@ public enum CarriegeClass {
 
     private String description;
 
-    CarriegeClass(String description) {
+    CarriageClass(String description) {
         this.description = description;
     }
 }

@@ -8,13 +8,13 @@ public class Train {
 
     private String name;
     private String destination;
-    private List<Carriege> carrieges;
+    private List<Carriage> carriages;
     private Person driver;
 
-    public Train(String name, String destination, List<Carriege> carrieges, Person driver) {
+    public Train(String name, String destination, List<Carriage> carriages, Person driver) {
         this.name = name;
         this.destination = destination;
-        this.carrieges = carrieges;
+        this.carriages = carriages;
         this.driver = driver;
     }
 
@@ -34,12 +34,12 @@ public class Train {
         this.destination = destination;
     }
 
-    public List<Carriege> getCarrieges() {
-        return carrieges;
+    public List<Carriage> getCarriages() {
+        return carriages;
     }
 
-    public void setCarrieges(List<Carriege> carrieges) {
-        this.carrieges = carrieges;
+    public void setCarriages(List<Carriage> carriages) {
+        this.carriages = carriages;
     }
 
     public Person getDriver() {

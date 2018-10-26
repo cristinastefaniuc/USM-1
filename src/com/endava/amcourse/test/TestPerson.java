@@ -25,5 +25,7 @@ public class TestPerson {
 
         System.out.println(Person.filterPersonsByGenderAndAge(students, MALE, Person.LEGAL_AGE));
         System.out.println(Person.filterPersonsByGenderAndAge(students, FEMALE, Person.LEGAL_AGE));
+
+        printDelimiter('*');
     }
 }
