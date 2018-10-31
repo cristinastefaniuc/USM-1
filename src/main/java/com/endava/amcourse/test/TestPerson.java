@@ -7,7 +7,7 @@ import java.util.List;
 
 import static com.endava.amcourse.person.Gender.FEMALE;
 import static com.endava.amcourse.person.Gender.MALE;
-import static com.endava.amcourse.utils.PrintUtils.printDelimiter;
+import static com.endava.amcourse.utils.TestUtils.printDelimiter;
 
 public class TestPerson {
 

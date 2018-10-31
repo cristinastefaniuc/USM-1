@@ -1,15 +1,22 @@
 package com.endava.amcourse.person;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+@NoArgsConstructor
+@Getter
 public class Person {
 
     public static final int LEGAL_AGE = 18;
-    private static final int MIN_AGE = 0;
-    private static final int MAX_AGE = 150;
+    public static final int MIN_AGE = 0;
+    public static final int MAX_AGE = 120;
 
     private String name;
     private int age;
@@ -21,28 +28,16 @@ public class Person {
         this.setGender(gender);
     }
 
-    public String getName() {
-        return name;
-    }
-
     public void setName(String name) {
         if (Objects.nonNull(name) && name.length() > 1) {
             this.name = name;
         }
     }
 
-    public int getAge() {
-        return age;
-    }
-
     public void setAge(int age) {
         if (age >= MIN_AGE && age <= MAX_AGE) {
             this.age = age;
         }
-    }
-
-    public Gender getGender() {
-        return gender;
     }
 
     public void setGender(Gender gender) {
@@ -68,10 +63,8 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
+        return "\'" + name + '\'' +
                 ", age=" + age +
-                ", gender=" + gender +
-                '}';
+                ", gender=" + gender;
     }
 }
